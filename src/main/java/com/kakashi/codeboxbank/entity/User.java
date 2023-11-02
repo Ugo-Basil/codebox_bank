@@ -1,10 +1,12 @@
 package com.kakashi.codeboxbank.entity;
 
 import jakarta.persistence.*;
+
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 
@@ -15,6 +17,8 @@ import java.time.LocalDateTime;
 @Builder
 @Entity
 @Table(name = "users")
+
+
 public class User {
 
     @Id
@@ -33,10 +37,9 @@ public class User {
 
     private  String stateOfOrigin;
 
+    private BigDecimal accountBalance;
+
     private  String accountNumber;
-
-    private String accountBalance;
-
 
     private String email;
 
@@ -51,4 +54,6 @@ public class User {
 
     @UpdateTimestamp
     private LocalDateTime modifiedAt;
+
+
 }

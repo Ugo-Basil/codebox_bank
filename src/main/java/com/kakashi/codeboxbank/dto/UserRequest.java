@@ -1,16 +1,14 @@
 package com.kakashi.codeboxbank.dto;
 
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
 public class UserRequest {
+
     private String firstName;
 
     private  String lastName;
@@ -29,5 +27,5 @@ public class UserRequest {
 
     private String alternativePhoneNumber;
 
-    private String status;
+
 }
