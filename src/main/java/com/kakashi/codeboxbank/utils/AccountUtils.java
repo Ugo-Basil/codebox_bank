@@ -10,6 +10,27 @@ public class AccountUtils {
     public  static  final  String ACCOUNT_CREATED_CODE = "002";
     public  static  final  String ACCOUNT_CREATED_MESSAGE = "Account created successfully";
 
+    public  static  final  String ACCOUNT_NOT_FOUND_CODE = "003";
+
+    public  static  final  String ACCOUNT_NOT_FOUND_MESSAGE = "Account not found";
+
+
+    public  static  final  String ACCOUNT_FOUND_CODE = "004";
+
+    public  static  final  String ACCOUNT_FOUND_MESSAGE = "Account found";
+
+    public  static  final  String ACCOUNT_CREDITED_SUCCESS = "005";
+
+    public  static  final  String ACCOUNT_CREDITED_MESSAGE = "Account credited successfully";
+
+    public  static  final  String INSUFFICIENT_BALANCE_CODE = "006";
+
+    public  static  final  String INSUFFICIENT_BALANCE_MESSAGE = "Insufficient balance";
+
+    public  static  final  String ACCOUNT_DEBITED_SUCCESS = "007";
+
+    public  static  final  String ACCOUNT_DEBITED_MESSAGE = "Account debited successfully";
+
     public  static  String generateAccountNumber(){
 //       Generate an account number, begin with the year plus randomSixDigits
 

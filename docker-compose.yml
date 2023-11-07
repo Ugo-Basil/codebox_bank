@@ -1,0 +1,15 @@
+
+version: "2"
+
+services:
+  #
+  # Used for validating mail is sent as expected
+  # Host -> smtp
+  # Port -> 1025
+  #
+  mailhog:
+    image: mailhog/mailhog
+    container_name: 'mailhog-codebox-bank'
+    ports:
+      - "1025:1025"
+      - "8025:8025"
